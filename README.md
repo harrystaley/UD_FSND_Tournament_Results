@@ -1,57 +1,30 @@
-#Udacity Full Stack Nanodegree
+# UD_FSND_Tournament_Results
 
-##Project: Tournament Results
-This project focuses on the functionality of a website backed by a Postgres database.
+## Project Overview
 
-### PROJECT SPECIFICATIONS
-as of April 2016
+The "Tournament Results" is a project from the Udacity Full Stack Nanodegree program. This project showcases a website backed by a PostgreSQL database, with unit tests, meaningful table and column design, and adherence to best practices in database normalization. The purpose of this project is to create a database schema to store the game matches between players and to code a Python module to rank the players and pair them up in matches in a tournament.
 
+## Setup and Installation
 
-Functionality
+To set up and run this project, you need to have Python and PostgreSQL installed on your machine. If you don't have these installed, you can download and install them from their official websites.
 
-| CRITERIA | MEETS SPECIFICATIONS |
-|----------|----------------------|
-| Does the module pass the included unit tests? | The module passes the included unit tests. |
+Once you have Python and PostgreSQL installed, follow the steps below:
 
-Table Design
+1. Clone this repository to your local machine using `git clone https://github.com/<your-github-username>/UD_FSND_Tournament_Results.git`
+2. Navigate to the project directory `cd UD_FSND_Tournament_Results`
+3. Run the command `pip install -r requirements.txt` to install the required dependencies.
+4. Open PostgreSQL and create a new database named 'tournament'.
+5. Import the `tournament.sql` file into your newly created database.
+6. Run `python tournament_test.py` to run the unit tests.
 
-| CRITERIA | MEETS SPECIFICATIONS |
-|----------|----------------------|
-| Do the tables have meaningful names? | Tables have meaningful names. |
-| Are the tables normalized? | Tables are normalized (no redundant data, data dependancies are properly defined). |
+## Usage
 
-Column Design
+After setting up the project, you can use it by running the `tournament_test.py` script. This script will run a series of tests to ensure that the functions in the `tournament.py` module are working correctly. If all tests pass, you can be confident that the tournament database and functions are set up correctly.
 
-| CRITERIA | MEETS SPECIFICATIONS |
-|----------|----------------------|
-| Are the columns defined with proper data types? | Table columns have proper data types. |
-| Do the columns have meaningful names? | Table columns have meaningful names. |
-| Are primary and secondary keys properly defined? | Primary and secondary keys are properly defined. |
+## Contribution
 
-Code Quality
+Contributions, issues, and feature requests are welcome. Feel free to check issues page if you want to contribute. Also, please make sure to update tests as appropriate before making a pull request.
 
-| CRITERIA | MEETS SPECIFICATIONS |
-|----------|----------------------|
-| Does the code make use of query parameters to protect against SQL injection? | Code makes use of query parameters to protect against SQL injection. |
-| Is the code ready for personal review and is neatly formatted? | Code is ready for personal review and is neatly formatted. |
+## License
 
-Comments
-
-| CRITERIA | MEETS SPECIFICATIONS |
-|----------|----------------------|
-| Are comments present and effectively explain longer code procedures? | Comments are present and effectively explain longer code procedures. |
-
-Documentation
-
-| CRITERIA | MEETS SPECIFICATIONS |
-|----------|----------------------|
-| Is a README file included, detailing all steps required to successfully run the application? | A README file is included detailing all steps required to successfully run the application. |
-
-Suggestions to Make Your Project Stand Out!
-
-Support more than one tournament in the database, so matches do not have to be deleted between tournaments. This will require distinguishing between “a registered player” and “a player who has entered in tournament #123”, so it will require changes to the database schema.
-Prevent rematches between players.
-
-Don’t assume an even number of players. If there is an odd number of players, assign one player a “bye” (skipped round). A bye counts as a free win. A player should not receive more than one bye in a tournament.
- English 
-
+Distributed under the MIT License. See `LICENSE` for more information.
